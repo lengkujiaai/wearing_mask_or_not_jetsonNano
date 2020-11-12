@@ -15,7 +15,7 @@ jetson nano 软件版本：
 
 https://github.com/MiguelOcegueraM/wearingMaskOrNot/blob/master/train_mask_detector02.py
 
-下载后，程序缩进有多处修改，代码有点乱，有多处修改
+下载后，程序缩进有多处错误，进行了修改；代码有点乱，也有修改；增加注释，调整代码的组织方式；增加功能
 
 在readme中看到了，该代码来自印度的一个作者：
 
