@@ -1,4 +1,5 @@
-#https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Generator
+#author: lengkujiaai@126.com
+
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import AveragePooling2D
