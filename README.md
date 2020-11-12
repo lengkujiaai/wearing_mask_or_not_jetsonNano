@@ -18,15 +18,24 @@ https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Genera
 如果加载模型时报错，注意应该在某版本tensorflow下训练的模型就必须在该版本下运行，别人训练的模型在你的tensorflow下可能报错。
 
 运行前需要先安装一些python库：
+
 0、jtop (如果你想看到cup等相关的信息，可以在一个终端中运行jtop)
+
 1、sudo  pip3 install imutils
+
 2、sudo pip3 install sklearn----如果安装不上，卸载enum34后安装成功
+
 3、sudo pip3 uninstall enum34
+
 4、sudo pip3 install sklearn
+
 5、sudo python3 train_mask_detector02.py -d dataset/
-这个时候如果运行第5步可能会在几分钟后报错（Resource exhausted: OOM when allocating tensor with shape[10000,32,28,28]）并停止。原因是虽然你设置了batch_size,但tensorflow默认是一次把所有数据都放进GPU。用CPU训练就可以了，我添加了如下几行：
+
+这个时候如果运行第5步可能会在几分钟后报错（Resource exhausted: OOM when allocating tensor with shape[10000,32,28,28]）并停止。原因是虽然你设置了batch_size,但tensorflow默认是一次把所有数据都放进GPU。用CPU训练就可以了，我已经添加了如下几行：
+
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 再运行第5步就可以了。由于我在代码中已经做了修改，所以你直接运行就可以了。
 
 运行过程见截图：
