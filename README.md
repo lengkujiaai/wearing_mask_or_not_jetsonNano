@@ -109,6 +109,7 @@ sudo python3 shi-detect_mask_video.py -m mask_detector.model
 usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
 
 进阶练习：
+
 1、shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改（代码随时修改，不能保证本readme是最新的）
 
 
