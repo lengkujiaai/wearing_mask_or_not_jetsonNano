@@ -30,10 +30,10 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 再运行第5步就可以了。由于我在代码中已经做了修改，所以你直接运行就可以了。
 
 运行过程见截图：
-
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/2_%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%9E%8B%E6%97%B6CPU%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
 运行结果：
-
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/3_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.png)
 运行完程序，会在本文件夹下生成mask_detector.model和plot.png
 plot.png记录是训练时损失和准确率的变化：
 
@@ -43,7 +43,7 @@ plot.png记录是训练时损失和准确率的变化：
 
 运行模型，测试一下结果：
 sudo python3 shi-detect_mask_video.py -m mask_detector.model
-
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/4_plot.png)
 加载时，显示视频的框可能会卡一下，不要慌，稍等一分钟就可以了。需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中有三个函数。其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
 
 
