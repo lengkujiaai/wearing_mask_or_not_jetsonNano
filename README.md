@@ -1,5 +1,8 @@
 # wearing_mask_or_not_jetsonNano
 背景：在nvidia的jetson nano上面跑一个检测是否带口罩的程序
+
+我的邮箱：lengkujiaai@126.com
+
 设备详细信息：
 
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/1_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%89%8D%E7%9A%84%E6%88%AA%E5%9B%BE.png)
@@ -102,9 +105,13 @@ shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，�
 
 
 另：
+
 1、2020-11-12，现供职于北京中电科卫星导航系统有限公司，本部门为研发中心。
+
 2、公司在淘宝销售nvidia jetson 系列的产品，包括jetson nano，TX1, TX2, AGX XAVIER,XAVIER NX产品
+
 3、我们属于提供技术支持的，本项目就是一老师要求的功能。
+
 4、复制链接：   
 
     2.0fυィ直信息₰gyi7clU3sNj₤回t~bao或點几url链 https://m.tb.cn/h.4WAPC9j?sm=19844c 至浏览er【北京中电科卫星导航公司】
