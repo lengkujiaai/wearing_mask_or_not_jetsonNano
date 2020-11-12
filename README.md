@@ -5,10 +5,13 @@
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/1_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%89%8D%E7%9A%84%E6%88%AA%E5%9B%BE.png)
 
 寻找代码，首先找到了：
+
 https://github.com/MiguelOcegueraM/wearingMaskOrNot/blob/master/train_mask_detector02.py
+
 下载后，程序缩进有多处修改，代码有点乱，有多处修改
 
 在readme中看到了，该代码来自印度的一个作者：
+
 https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Generator
 
 代码的数据集中有不戴口罩的照片686张，在without_mask文件夹中；戴口罩的照片690张，在with_mask文件夹中。
