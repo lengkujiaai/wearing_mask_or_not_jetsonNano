@@ -123,4 +123,4 @@ shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，�
 
     2.0fυィ直信息₰gyi7clU3sNj₤回t~bao或點几url链 https://m.tb.cn/h.4WAPC9j?sm=19844c 至浏览er【北京中电科卫星导航公司】
     
-    后打开淘宝即可
+后打开淘宝即可
