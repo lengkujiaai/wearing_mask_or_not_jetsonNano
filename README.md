@@ -3,7 +3,11 @@
 
 我的邮箱：lengkujiaai@126.com
 
-设备详细信息：
+jetson nano 软件版本：
+
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/0_%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.png)
+
+训练模型前处理器的状态：
 
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/1_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%89%8D%E7%9A%84%E6%88%AA%E5%9B%BE.png)
 
