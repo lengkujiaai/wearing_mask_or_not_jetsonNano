@@ -59,18 +59,41 @@ plot.png记录是训练时损失和准确率的变化：
 
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/4_plot.png)
 
-调用摄像头前需要先确认一下摄像头，在终端输入：ls /dev/video*后，如果有两个摄像头会看到类似/dev/video0    /dev/video1,如果有一个摄像头会看到/dev/video0。如果有多个摄像头，假设/dev/video0是CSI摄像头，/dev/video1是USB摄像头，
-现在想用usb摄像头，需要把usb_camera_detect()函数下面的vs = VideoStream(src=xx).start()中的xx换成1就行了。注意我代码中并不是写的xx而是对应的摄像头。还需要把if __name__ == “__main__”:下面usb_camera_detect()前面的#号去掉，保存并退出，再运行就可以了。
-现在想用CSI摄像头，只需要把if __name__ == “__main__”:下面usb_camera_detect()前面的#号去掉，保存并退出，再运行就可以了。注意，紧邻的另外两个函数前面得有#号。
+调用摄像头前需要先确认一下摄像头，在终端输入：
+
+ls /dev/video*
+
+后，如果有两个摄像头会看到类似
+
+/dev/video0    /dev/video1
+
+如果有一个摄像头会看到/dev/video0。如果有多个摄像头，假设/dev/video0是CSI摄像头，/dev/video1是USB摄像头
+
+现在想用usb摄像头，需要把usb_camera_detect()函数下面的vs = VideoStream(src=xx).start()中的xx换成1就行了
+
+注意我代码中并不是写的xx而是对应的摄像头
+
+还需要把
+if __name__ == “__main__”:
+下面usb_camera_detect()前面的#号去掉，保存并退出，再运行就可以了
+
+现在想用CSI摄像头，只需要把
+if __name__ == “__main__”:
+下面usb_camera_detect()前面的#号去掉，保存并退出，再运行就可以了。注意，紧邻的另外两个函数前面得有#号。
 
 运行模型，测试一下结果：
+
 sudo python3 shi-detect_mask_video.py -m mask_detector.model
 
 加载时，显示视频的框可能会卡一下，不要慌，稍等一分钟就可以了。
 
-需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中有几个函数。其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
+需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中有几个函数。
 
-shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改
+其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。
+
+usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
+
+shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改（代码随时修改，不能保证本readme是最新的）
 
 
 
