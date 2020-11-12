@@ -1,7 +1,7 @@
 # wearing_mask_or_not_jetsonNano
 背景：在nvidia的jetson nano上面跑一个检测是否带口罩的程序
 设备详细信息：
-
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/1_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%89%8D%E7%9A%84%E6%88%AA%E5%9B%BE.png)
 
 寻找代码，首先找到了：
 https://github.com/MiguelOcegueraM/wearingMaskOrNot/blob/master/train_mask_detector02.py
