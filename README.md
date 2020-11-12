@@ -94,15 +94,15 @@ if __name__ == “__main__”:
 
 if __name__ == “__main__”:
 
-下面usb_camera_detect()前面的#号去掉，保存并退出，再运行就可以了。注意，紧邻的另外两个函数前面得有#号。
+下面csi_camera_detect()前面的#号去掉，保存并退出，再运行就可以了。注意，紧邻的另外两个函数前面得有#号。
 
 运行模型，测试一下结果：
 
-sudo python3 shi-detect_mask_video.py -m mask_detector.model
+sudo python3 shi_detect_mask_video.py -m mask_detector.model
 
 加载时，显示视频的框可能会卡一下，不要慌，稍等一分钟就可以了。
 
-需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中写了几个函数。
+需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi_detect_mask_video.py中写了几个函数。
 
 其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。
 
@@ -110,7 +110,7 @@ usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()
 
 进阶练习：
 
-1、shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改（代码随时修改，不能保证本readme是最新的）
+1、shi_detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改（代码随时修改，不能保证本readme是最新的）
 
 
 2、使用者可以自己采集没有带口罩的图片，用作图工具给没戴口罩的图片添加口罩后，分别放到dataset目录下的with_mask和without_mask文件夹中，训练自己的图片看看效果。记得把原有的图片删除，采集样本也是学习神经网络的重要一环呢。如果样本有错误，后面的一切都无从谈起。也可以保留原有的图片，在dataset目录下创建my_with_mask和my_without_mask文件夹来存放自己的样本，但记得修改训练代码的相关路径
