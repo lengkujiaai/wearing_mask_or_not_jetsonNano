@@ -29,6 +29,10 @@ https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Genera
 
 如果加载模型时报错，注意应该在某版本tensorflow下训练的模型就必须在该版本下运行，别人训练的模型在你的tensorflow下可能报错。
 
+nvidia官方也有一个检测口罩的示例：
+
+https://github.com/NVIDIA-AI-IOT/face-mask-detection
+
 运行前需要先安装一些python库：
 
 0、jtop (如果你想看到cup等相关的信息，可以在一个终端中运行jtop)
