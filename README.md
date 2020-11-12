@@ -62,7 +62,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/3_%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C.png)
 运行完程序，会在本文件夹下生成mask_detector.model和plot.png
 
-plot.png记录是训练时损失和准确率的变化：
+plot.png记录的是训练时损失和准确率的变化：
 
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/4_plot.png)
 
