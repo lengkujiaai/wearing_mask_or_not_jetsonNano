@@ -14,6 +14,7 @@ https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Genera
 代码的数据集中有不戴口罩的照片686张，在without_mask文件夹中；戴口罩的照片690张，在with_mask文件夹中。
 
 训练全部图片共用时55分钟，训练结束时的with_mask准确率97%，without_mask准确率100%
+
 去掉增强图片后剩余约480张，重新训练这480张图片共用时33分钟
 
 如果加载模型时报错，注意应该在某版本tensorflow下训练的模型就必须在该版本下运行，别人训练的模型在你的tensorflow下可能报错。
@@ -37,6 +38,7 @@ https://github.com/prajnasb/observations/tree/master/mask_classifier/Data_Genera
 原因是虽然你设置了batch_size,但tensorflow默认是一次把所有数据都放进GPU。用CPU训练就可以了，我已经添加了如下几行：
 
 import os
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 再运行第5步就可以了。由于我在代码中已经做了修改，所以你直接运行就可以了。
@@ -63,7 +65,9 @@ sudo python3 shi-detect_mask_video.py -m mask_detector.model
 
 加载时，显示视频的框可能会卡一下，不要慌，稍等一分钟就可以了。
 
-需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中有三个函数。其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
+需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi-detect_mask_video.py中有几个函数。其中just_csi_camera()只是调用一下CSI相机，并没有调用检测口罩的模型，运行较快，可以作为检测相机是否正常使用。usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()是调用CSI相机检测是否带口罩。
+
+shi-detect_mask_video.py文件最后增加了一个可以修改的小测验，感兴趣的可以修改
 
 
 
