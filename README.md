@@ -104,6 +104,8 @@ sudo python3 shi_detect_mask_video.py -m mask_detector.model
 
 运行效果：
 ![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/recorder_csi_detect_short.gif)
+在jetson nano上录屏用的是simplescreenrecorder软件，安装：sudo apt-get install simplescreenrecorder
+在win10上进行视频转gif是用的：https://www.cockos.com/licecap/
 
 需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi_detect_mask_video.py中写了几个函数。
 
