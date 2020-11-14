@@ -103,7 +103,7 @@ sudo python3 shi_detect_mask_video.py -m mask_detector.model
 加载时，显示视频的框可能会卡一下，不要慌，稍等一分钟就可以了。
 
 运行效果：
-![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/my_video.gif)
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/recorder_csi_detect_short.gif)
 
 需要注意的是，由于jetson nano有CSI相机接口，也可以使用USB相机，所以我在shi_detect_mask_video.py中写了几个函数。
 
