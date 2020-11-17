@@ -41,7 +41,7 @@ https://github.com/NVIDIA-AI-IOT/face-mask-detection
 
 2、sudo pip3 install sklearn----如果安装不上，卸载enum34后安装成功
 
-3、sudo pip3 uninstall enum34
+3、sudo pip3 uninstall enum34-----卸载enum34
 
 4、sudo pip3 install sklearn
 
