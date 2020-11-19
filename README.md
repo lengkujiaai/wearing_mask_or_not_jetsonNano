@@ -139,3 +139,7 @@ usb_camera_detect()是调用usb相机检测是否戴口罩，csi_camera_detect()
     2.0fυィ直信息₰gyi7clU3sNj₤回t~bao或點几url链 https://m.tb.cn/h.4WAPC9j?sm=19844c 至浏览er【北京中电科卫星导航公司】
     
 后打开淘宝即可
+
+技术支持：
+
+![image](https://github.com/lengkujiaai/wearing_mask_or_not_jetsonNano/blob/main/images/%E5%85%AC%E5%8F%B8%E4%BA%A7%E5%93%81.png)
