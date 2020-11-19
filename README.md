@@ -37,7 +37,7 @@ https://github.com/NVIDIA-AI-IOT/face-mask-detection
 
 0、jtop (如果你想看到cup等相关的信息，可以在一个终端中运行jtop)
 
-1、sudo pip3 install matplotlib------有时候用时间有点长，如果不想用matplotlib画图，可以不安装，但要记得把对应的代码行注释掉
+1、sudo pip3 install matplotlib------有时候安装时间有点长，如果不想用matplotlib画图，可以不安装，但要记得把对应的代码行注释掉
 
 2、sudo  pip3 install imutils--------------看到Successfully installed imutils-XXX即安装成功
 
