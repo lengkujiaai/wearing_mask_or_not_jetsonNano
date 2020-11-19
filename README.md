@@ -37,13 +37,13 @@ https://github.com/NVIDIA-AI-IOT/face-mask-detection
 
 0、jtop (如果你想看到cup等相关的信息，可以在一个终端中运行jtop)
 
-1、sudo  pip3 install imutils
+1、sudo  pip3 install imutils--------------看到Successfully installed imutils-XXX即安装成功
 
 2、sudo pip3 install sklearn----如果安装不上sklearn，卸载enum34后安装成功
 
 3、sudo pip3 uninstall enum34-----卸载enum34
 
-4、sudo pip3 install sklearn-----再次安装sklearn
+4、sudo pip3 install sklearn-----再次安装sklearn，安装时间有点长，需要耐心等待
 
 5、sudo python3 shi_train_mask_detector.py -d dataset/
 
