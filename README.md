@@ -37,15 +37,17 @@ https://github.com/NVIDIA-AI-IOT/face-mask-detection
 
 0、jtop (如果你想看到cup等相关的信息，可以在一个终端中运行jtop)
 
-1、sudo  pip3 install imutils--------------看到Successfully installed imutils-XXX即安装成功
+1、sudo pip3 install matplotlib------有时候用时间有点长，如果不想用matplotlib画图，可以不安装，但要记得把对应的代码行注释掉
 
-2、sudo pip3 install sklearn----如果安装不上sklearn，卸载enum34后安装成功
+2、sudo  pip3 install imutils--------------看到Successfully installed imutils-XXX即安装成功
 
-3、sudo pip3 uninstall enum34-----卸载enum34
+3、sudo pip3 install sklearn----如果安装不上sklearn，卸载enum34后安装成功
 
-4、sudo pip3 install sklearn-----再次安装sklearn，安装时间有点长，需要耐心等待
+4、sudo pip3 uninstall enum34-----卸载enum34
 
-5、sudo python3 shi_train_mask_detector.py -d dataset/
+5、sudo pip3 install sklearn-----再次安装sklearn，安装时间有点长，需要耐心等待
+
+6、sudo python3 shi_train_mask_detector.py -d dataset/
 
 这个时候如果运行第5步可能会在几分钟后报错（Resource exhausted: OOM when allocating tensor with shape[10000,32,28,28]）并停止。
 
