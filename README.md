@@ -1,7 +1,7 @@
 # wearing_mask_or_not_jetsonNano
 背景：在nvidia的jetson nano上面跑一个检测是否带口罩的程序
 
-我的邮箱：lengkujiaai@126.com
+作者：lengkujiaai@126.com
 
 jetson nano 软件版本：
 
